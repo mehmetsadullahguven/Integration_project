@@ -1,43 +1,30 @@
-package com.mehmetsadullahguven.model;
+package com.mehmetsadullahguven.dto.product.restIU;
 
-import com.mehmetsadullahguven.dto.product.restIU.DtoImageIU;
+import com.mehmetsadullahguven.dto.DtoBase;
 import com.mehmetsadullahguven.enums.StatusType;
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
 
-@Entity
-@Table(name = "product")
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
-public class Product extends BaseEntity{
+public class DtoRestProductIU extends DtoBase {
 
-    @Column(name = "merchantProductId")
+    @NotBlank(message = "merchantProductId boş olamaz")
     private String merchantProductId;
-
-    @Column(name = "merchantParentProductId")
-    private String merchantParentProductId;
-
-    @Column(name = "status")
-    private Integer status;
-
-    @Column(name = "serialized_data", columnDefinition = "TEXT")
-    private String serializedData;
 
     @NotBlank(message = "name boş olamaz")
     private String name;
 
     @NotBlank(message = "description boş olamaz")
     private String description;
+
+    @NotNull(message = "status boş olamaz")
+    private StatusType status;
 
     private String brand;
 
@@ -47,6 +34,7 @@ public class Product extends BaseEntity{
 
     private String ean;
 
+    private String merchantParentProductId;
 
     private Float price;
 

@@ -1,4 +1,4 @@
-package com.mehmetsadullahguven.controller;
+package com.mehmetsadullahguven.controller.rest;
 
 import com.mehmetsadullahguven.dto.DtoUser;
 import com.mehmetsadullahguven.dto.AuthRequest;

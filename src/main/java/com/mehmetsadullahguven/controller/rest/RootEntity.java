@@ -1,4 +1,4 @@
-package com.mehmetsadullahguven.controller;
+package com.mehmetsadullahguven.controller.rest;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package com.mehmetsadullahguven.controller;
+package com.mehmetsadullahguven.controller.rest;
 
 import com.mehmetsadullahguven.dto.DtoIntegration;
 import com.mehmetsadullahguven.dto.DtoIntegrationIU;

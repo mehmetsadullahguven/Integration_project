@@ -2,16 +2,17 @@ package com.mehmetsadullahguven.adaptors;
 
 
 import com.mehmetsadullahguven.dto.*;
-
-import java.util.List;
+import com.mehmetsadullahguven.dto.product.restIU.DtoRestProductIU;
 
 public interface IGeneralAdaptor {
 
-    public DtoProduct productCreate(DtoProductIU dtoProductIU);
+    public DtoProduct productCreate(DtoRestProductIU dtoRestProductIU);
 
-    public DtoProduct productUpdate(DtoProductIU dtoProductIU);
+    public DtoProduct productUpdate(DtoRestProductIU dtoRestProductIU);
 
-    public DtoProduct productDelete(DtoProductIU dtoProductIU);
+    public DtoProduct productPartiallyUpdate(DtoRestProductIU dtoRestProductIU);
+
+    public DtoProduct productDelete(DtoRestProductIU dtoRestProductIU);
 
     public DtoOrders orderList(DtoOrderIU dtoOrderIU);
 

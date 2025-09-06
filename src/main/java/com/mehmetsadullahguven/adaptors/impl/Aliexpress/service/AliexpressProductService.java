@@ -4,6 +4,7 @@ import com.mehmetsadullahguven.adaptors.impl.Aliexpress.AbstractAliexpress;
 import com.mehmetsadullahguven.adaptors.impl.Aliexpress.dto.product.*;
 import com.mehmetsadullahguven.adaptors.impl.Aliexpress.enums.Language;
 import com.mehmetsadullahguven.dto.*;
+import com.mehmetsadullahguven.dto.product.restIU.DtoRestProductIU;
 import com.mehmetsadullahguven.enums.LanguageType;
 import com.mehmetsadullahguven.exception.BaseException;
 import com.mehmetsadullahguven.exception.ErrorMessage;
@@ -18,18 +19,18 @@ import java.util.stream.Stream;
 @Service
 public class AliexpressProductService extends AbstractAliexpress {
 
-    public DtoProduct create(DtoProductIU dtoProductIU) {
-        return upsert(dtoProductIU);
+    public DtoProduct create(DtoRestProductIU dtoRestProductIU) {
+        return upsert(dtoRestProductIU);
     }
 
-    public DtoProduct update(DtoProductIU dtoProductIU) {
-        return upsert(dtoProductIU);
+    public DtoProduct update(DtoRestProductIU dtoRestProductIU) {
+        return upsert(dtoRestProductIU);
     }
 
-    public DtoProduct delete(DtoProductIU dtoProductIU) {
-        Optional<Product> optionalProduct = productRepository.findByR2sProductIdAndR2sProductListId(dtoProductIU.getR2sProductId(), dtoProductIU.getR2sProductListId());
+    public DtoProduct delete(DtoRestProductIU dtoRestProductIU) {
+        Optional<Product> optionalProduct = productRepository.findByR2sProductIdAndR2sProductListId(dtoRestProductIU.getMerchantProductId(), dtoRestProductIU.getMerchantParentProductId());
         if (optionalProduct.isPresent()) {
-            OfflineProduct offlineProduct = offlineProductStatus(optionalProduct.get().getClientProductId(), dtoProductIU);
+            OfflineProduct offlineProduct = offlineProductStatus(optionalProduct.get().getClientProductId(), dtoRestProductIU);
             if (Objects.requireNonNull(offlineProduct).getResults().get(0).getOk()) {
                 productRepository.delete(optionalProduct.get());
                 return getDtoProducts(optionalProduct.get(), "delete");
@@ -38,31 +39,31 @@ public class AliexpressProductService extends AbstractAliexpress {
         throw new BaseException(new ErrorMessage(ErrorMessageType.GENERAL_EXIST, "Product not found"));
     }
 
-    private DtoProduct upsert(DtoProductIU dtoProductIU) {
+    private DtoProduct upsert(DtoRestProductIU dtoRestProductIU) {
 
-        Optional<Product> optionalProduct = productRepository.findByR2sProductIdAndR2sProductListId(dtoProductIU.getR2sProductId(), dtoProductIU.getR2sProductListId());
-        return optionalProduct.map(product -> updateProduct(dtoProductIU, product)).orElseGet(() -> createProduct(dtoProductIU));
+        Optional<Product> optionalProduct = productRepository.findByR2sProductIdAndR2sProductListId(dtoRestProductIU.getMerchantProductId(), dtoRestProductIU.getMerchantParentProductId());
+        return optionalProduct.map(product -> updateProduct(dtoRestProductIU, product)).orElseGet(() -> createProduct(dtoRestProductIU));
     }
 
-    private DtoProduct createProduct(DtoProductIU dtoProductIU) {
-        if (dtoProductIU.getActive() == 0) {
+    private DtoProduct createProduct(DtoRestProductIU dtoRestProductIU) {
+        if (dtoRestProductIU.getActive() == 0) {
             throw new BaseException(new ErrorMessage(ErrorMessageType.GENERAL_EXIST, "product not active"));
         }
-        ProductObject productObject = handleProduct(dtoProductIU);
+        ProductObject productObject = handleProduct(dtoRestProductIU);
 
-        Product savedproduct = saveProduct(dtoProductIU, super.setSerializedObject(productObject), "create_bulk_waiting");
+        Product savedproduct = saveProduct(dtoRestProductIU, super.setSerializedObject(productObject), "create_bulk_waiting");
 
         return getDtoProducts(savedproduct, "create");
     }
 
-    private DtoProduct updateProduct(DtoProductIU dtoProductIU, Product product) {
+    private DtoProduct updateProduct(DtoRestProductIU dtoRestProductIU, Product product) {
 
         if (Objects.equals(product.getClientProductId(), null)) {
             throw new BaseException(new ErrorMessage(ErrorMessageType.GENERAL_EXIST, "clientProductID not found"));
         }
 
-        if (dtoProductIU.getActive() == 0) {
-            OfflineProduct offlineProduct = offlineProductStatus(product.getClientProductId(), dtoProductIU);
+        if (dtoRestProductIU.getActive() == 0) {
+            OfflineProduct offlineProduct = offlineProductStatus(product.getClientProductId(), dtoRestProductIU);
             Objects.requireNonNull(offlineProduct).getResults().forEach(offlineProductResult -> {
                 if (offlineProductResult.getOk()) {
                     throw new BaseException(new ErrorMessage(ErrorMessageType.GENERAL_EXIST, "product not active"));
@@ -70,22 +71,22 @@ public class AliexpressProductService extends AbstractAliexpress {
             });
         }
 
-        ProductObject productObject = handleProduct(dtoProductIU);
-        Product savedproduct = saveProduct(dtoProductIU, this.setSerializedObject(productObject), "update_bulk_waiting");
+        ProductObject productObject = handleProduct(dtoRestProductIU);
+        Product savedproduct = saveProduct(dtoRestProductIU, this.setSerializedObject(productObject), "update_bulk_waiting");
 
         return getDtoProducts(savedproduct, "update");
 
     }
 
-    private ProductObject handleProduct(DtoProductIU dtoProductIU) {
-        DtoTranslationIU dtoTranslationIU = getTranslation(dtoProductIU.getTranslations());
-        Integer remoteCategoryId = getRemoteCategoryId(dtoProductIU.getCategory());
+    private ProductObject handleProduct(DtoRestProductIU dtoRestProductIU) {
+        DtoTranslationIU dtoTranslationIU = getTranslation(dtoRestProductIU.getTranslations());
+        Integer remoteCategoryId = getRemoteCategoryId(dtoRestProductIU.getCategory());
         List<String> mediaList = getImages(dtoTranslationIU.getImages());
 
         List<MultiLanguageDescriptionList> multiLanguageDescriptionList = new ArrayList<>();
         List<MultiLanguageSubjectList> multiLanguageSubjectList = new ArrayList<>();
 
-        for (DtoTranslationIU dtoTranslation : dtoProductIU.getTranslations()) {
+        for (DtoTranslationIU dtoTranslation : dtoRestProductIU.getTranslations()) {
 
             if (Objects.isNull(dtoTranslation.getLanguage())) {
                 continue;
@@ -104,25 +105,25 @@ public class AliexpressProductService extends AbstractAliexpress {
 
         ProductObject productObject = new ProductObject();
         productObject.setAliexpressCategoryId(remoteCategoryId);
-        productObject.setExternalId(dtoProductIU.getR2sProductId());
+        productObject.setExternalId(dtoRestProductIU.getR2sProductId());
         productObject.setFreightTemplateId(34039964002L);
         productObject.setLanguage(Language.valueOf(dtoTranslationIU.getLanguage().name()));
         productObject.setMainImageUrlsList(mediaList);
         productObject.setMultiLanguageDescriptionList(multiLanguageDescriptionList);
         productObject.setMultiLanguageSubjectList(multiLanguageSubjectList);
-        productObject.setPackageHeight(dtoProductIU.getSize().getHeight());
-        productObject.setPackageLength(dtoProductIU.getSize().getLength());
-        productObject.setPackageWidth(dtoProductIU.getSize().getWidth());
-        productObject.setWeight(dtoProductIU.getWeight().toString());
+        productObject.setPackageHeight(dtoRestProductIU.getSize().getHeight());
+        productObject.setPackageLength(dtoRestProductIU.getSize().getLength());
+        productObject.setPackageWidth(dtoRestProductIU.getSize().getWidth());
+        productObject.setWeight(dtoRestProductIU.getWeight().toString());
         productObject.setShippingLeadTime(30);
         productObject.setProductUnit(100000015);
         productObject.setBulkDiscount(99);
         productObject.setBulkOrder(99);
 
-        if (dtoProductIU.getGtip().isEmpty()) {
+        if (dtoRestProductIU.getGtip().isEmpty()) {
             //throw new BaseException(new ErrorMessage(ErrorMessageType.GENERAL_EXIST, "gtip not found"));
         }else {
-            List<HsCodes> hsCodes = Stream.of(new HsCodes()).peek(hsCode -> hsCode.setCode(dtoProductIU.getGtip().get(0).getCodeDotted())).toList();
+            List<HsCodes> hsCodes = Stream.of(new HsCodes()).peek(hsCode -> hsCode.setCode(dtoRestProductIU.getGtip().get(0).getCodeDotted())).toList();
             productObject.setHsCodes(hsCodes);
         }
 
@@ -130,24 +131,24 @@ public class AliexpressProductService extends AbstractAliexpress {
 
         List<SkuInfoList> skuInfoList;
 
-        if (dtoProductIU.getCombines().isEmpty()) {
+        if (dtoRestProductIU.getCombines().isEmpty()) {
             skuInfoList = Stream.of(new SkuInfoList()).peek(skuInfo -> {
-                skuInfo.setSkuCode(dtoProductIU.getR2sProductId());
-                skuInfo.setInventory(dtoProductIU.getQuantity());
-                skuInfo.setPrice(dtoProductIU.getPrice().toString());
+                skuInfo.setSkuCode(dtoRestProductIU.getR2sProductId());
+                skuInfo.setInventory(dtoRestProductIU.getQuantity());
+                skuInfo.setPrice(dtoRestProductIU.getPrice().toString());
             }).toList();
         } else {
-            skuInfoList = skuAttributeMapping(dtoProductIU);
+            skuInfoList = skuAttributeMapping(dtoRestProductIU);
         }
         productObject.setSkuInfoList(skuInfoList);
 
         return productObject;
     }
 
-    private List<SkuInfoList> skuAttributeMapping(DtoProductIU dtoProductIU) {
+    private List<SkuInfoList> skuAttributeMapping(DtoRestProductIU dtoRestProductIU) {
         List<SkuInfoList> skuInfoList = new ArrayList<>();
 
-        dtoProductIU.getCombines().forEach(dtoCombineIU -> {
+        dtoRestProductIU.getCombines().forEach(dtoCombineIU -> {
 
             List<SkuAttributesList> skuAttributeList = new ArrayList<>();
             dtoCombineIU.getVariant().forEach(dtoVariantIU -> {
@@ -161,7 +162,7 @@ public class AliexpressProductService extends AbstractAliexpress {
             SkuInfoList skuInfo = new SkuInfoList();
             skuInfo.setSkuCode(dtoCombineIU.getCombineId());
             skuInfo.setSkuAttributesList(skuAttributeList);
-            skuInfo.setPrice(String.valueOf(dtoProductIU.getPrice() + dtoCombineIU.getPriceDiff()));
+            skuInfo.setPrice(String.valueOf(dtoRestProductIU.getPrice() + dtoCombineIU.getPriceDiff()));
             skuInfo.setInventory(dtoCombineIU.getQuantity());
             skuInfo.setDiscountPrice("0");
             skuInfoList.add(skuInfo);
@@ -199,14 +200,14 @@ public class AliexpressProductService extends AbstractAliexpress {
         return dtoProduct;
     }
 
-    private OfflineProduct offlineProductStatus(String clientProductId, DtoProductIU dtoProductIU) {
+    private OfflineProduct offlineProductStatus(String clientProductId, DtoRestProductIU dtoRestProductIU) {
 
         List<String> productIds = new ArrayList<>();
         productIds.add(clientProductId);
         OfflineProductIU offlineProductIU = new OfflineProductIU();
         offlineProductIU.setProductIds(productIds);
 
-        ResponseEntity<OfflineProduct> responseEntity = super.sendRequest(offlineProductIU, dtoProductIU, OfflineProduct.class, null, "/api/v1/product/offline");
+        ResponseEntity<OfflineProduct> responseEntity = super.sendRequest(offlineProductIU, dtoRestProductIU, OfflineProduct.class, null, "/api/v1/product/offline");
         if (responseEntity.getStatusCode().is2xxSuccessful()) {
             return responseEntity.getBody();
         }

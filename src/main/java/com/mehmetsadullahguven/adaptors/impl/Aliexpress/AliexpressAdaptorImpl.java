@@ -4,6 +4,7 @@ import com.mehmetsadullahguven.adaptors.IGeneralAdaptor;
 import com.mehmetsadullahguven.adaptors.impl.Aliexpress.service.AliexpressOrderService;
 import com.mehmetsadullahguven.adaptors.impl.Aliexpress.service.AliexpressProductService;
 import com.mehmetsadullahguven.dto.*;
+import com.mehmetsadullahguven.dto.product.restIU.DtoRestProductIU;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,18 +18,23 @@ public class AliexpressAdaptorImpl implements IGeneralAdaptor {
     private AliexpressOrderService orderService;
 
     @Override
-    public DtoProduct productCreate(DtoProductIU dtoProductIU) {
-        return productService.create(dtoProductIU);
+    public DtoProduct productCreate(DtoRestProductIU dtoRestProductIU) {
+        return productService.create(dtoRestProductIU);
     }
 
     @Override
-    public DtoProduct productUpdate(DtoProductIU dtoProductIU) {
-        return productService.update(dtoProductIU);
+    public DtoProduct productUpdate(DtoRestProductIU dtoRestProductIU) {
+        return productService.update(dtoRestProductIU);
     }
 
     @Override
-    public DtoProduct productDelete(DtoProductIU dtoProductIU) {
-        return productService.delete(dtoProductIU);
+    public DtoProduct productPartiallyUpdate(DtoRestProductIU dtoRestProductIU) {
+        return null;
+    }
+
+    @Override
+    public DtoProduct productDelete(DtoRestProductIU dtoRestProductIU) {
+        return productService.delete(dtoRestProductIU);
     }
 
     @Override

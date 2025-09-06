@@ -1,4 +1,4 @@
-package com.mehmetsadullahguven.controller;
+package com.mehmetsadullahguven.controller.rest;
 
 public class RestBaseController {
 

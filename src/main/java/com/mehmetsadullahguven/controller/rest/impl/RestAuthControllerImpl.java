@@ -1,15 +1,12 @@
-package com.mehmetsadullahguven.controller.impl;
+package com.mehmetsadullahguven.controller.rest.impl;
 
-import com.mehmetsadullahguven.controller.IRestAuthController;
-import com.mehmetsadullahguven.controller.RestBaseController;
-import com.mehmetsadullahguven.controller.RootEntity;
+import com.mehmetsadullahguven.controller.rest.IRestAuthController;
+import com.mehmetsadullahguven.controller.rest.RestBaseController;
+import com.mehmetsadullahguven.controller.rest.RootEntity;
 import com.mehmetsadullahguven.dto.DtoUser;
 import com.mehmetsadullahguven.dto.AuthRequest;
 import com.mehmetsadullahguven.dto.AuthResponse;
 import com.mehmetsadullahguven.dto.RefreshTokenRequest;
-import com.mehmetsadullahguven.exception.BaseException;
-import com.mehmetsadullahguven.exception.ErrorMessage;
-import com.mehmetsadullahguven.exception.ErrorMessageType;
 import com.mehmetsadullahguven.service.IAuthService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

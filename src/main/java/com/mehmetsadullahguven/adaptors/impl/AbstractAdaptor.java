@@ -3,6 +3,7 @@ package com.mehmetsadullahguven.adaptors.impl;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mehmetsadullahguven.dto.*;
+import com.mehmetsadullahguven.dto.product.restIU.DtoRestProductIU;
 import com.mehmetsadullahguven.enums.LanguageType;
 import com.mehmetsadullahguven.exception.BaseException;
 import com.mehmetsadullahguven.exception.ErrorMessage;
@@ -85,16 +86,16 @@ public class AbstractAdaptor {
         throw new BaseException(new ErrorMessage(ErrorMessageType.GENERAL_EXIST, "translation not found"));
     }
 
-    protected Product saveProduct(DtoProductIU dtoProductIU, String serializedProduct, String operation) {
+    protected Product saveProduct(DtoRestProductIU dtoRestProductIU, String serializedProduct, String operation) {
         Product product;
 
         if (operation.equalsIgnoreCase("create_bulk_waiting")) {
             product = new Product();
-            product.setR2sProductId(dtoProductIU.getR2sProductId());
-            product.setR2sProductListId(dtoProductIU.getR2sProductListId());
+            product.setR2sProductId(dtoRestProductIU.getMerchantProductId());
+            product.setR2sProductListId(dtoRestProductIU.getMerchantParentProductId());
             product.setCreatedAt(new Date());
         } else {
-            Optional<Product> optionalProduct = productRepository.findByR2sProductIdAndR2sProductListId(dtoProductIU.getR2sProductId(), dtoProductIU.getR2sProductListId());
+            Optional<Product> optionalProduct = productRepository.findByR2sProductIdAndR2sProductListId(dtoRestProductIU.getMerchantProductId(), dtoRestProductIU.getMerchantParentProductId());
             if (optionalProduct.isEmpty()) {
                 throw new BaseException(new ErrorMessage(ErrorMessageType.GENERAL_EXIST, "product not found"));
             }

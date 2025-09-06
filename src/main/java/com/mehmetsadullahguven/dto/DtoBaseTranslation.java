@@ -1,5 +1,6 @@
 package com.mehmetsadullahguven.dto;
 
+import com.mehmetsadullahguven.dto.product.restIU.DtoImageIU;
 import com.mehmetsadullahguven.enums.LanguageType;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
