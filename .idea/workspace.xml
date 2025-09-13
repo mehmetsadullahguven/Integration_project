@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="08bf5452-0cf5-4f2c-a8d8-1de4c0b7f4c2" name="Changes" comment="Product Updated.">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/products.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration-v2.eml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/integration-v2.eml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/GeneralAdaptorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/IGeneralAdaptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/AbstractAdaptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/AbstractAliexpress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/AliexpressAdaptorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/order/OrderFulfillmentAndStatusRequestIU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/order/OrderFulfillmentAndStatusResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/order/OrderFullfilmentAndStatusResponseData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/order/OrderListRequestIU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/order/OrderListResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/order/OrderListResponseData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/order/OrderListResponseDeliveryInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/order/OrderListResponseOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/order/OrderListResponseOrderLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/order/OrderListResponseReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/AttributeList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/HsCodes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/MultiLanguageDescriptionList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/MultiLanguageSubjectList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/OfflineProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/OfflineProductIU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/OfflineProductResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/ProductObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/ProductResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/ProductResponseResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/ProductStatusDataErrorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/ProductStatusDataResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/ProductStatusResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/Products.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/SkuAttributesList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/SkuInfoList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/dto/product/Video.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/enums/Language.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/service/AliexpressOrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Aliexpress/service/AliexpressProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/AbstractFruugo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/FruugoAdaptorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/order/OrderFulfillmentRequestIU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/order/OrderRequestIU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/Attribute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/Detail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/DiscountPrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/Gtin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/Media.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/NormalPrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/PriceInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/ProductObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/ProductType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/Products.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/Sku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/SkuDescription.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/dto/product/SupplyInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/enums/CodeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/enums/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/enums/Currency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/enums/Language.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/enums/MediaType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/enums/StockStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/service/FruugoOrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/adaptors/impl/Fruugo/service/FruugoProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/IRestAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/IRestAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/IRestIntegrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/IRestIntegrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/IRestOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/IRestOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/IRestProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/IRestProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/IRestWebhookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/IRestWebhookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/RestBaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/RestBaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/RootEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/RootEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestAuthControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestAuthControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestIntegrationControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestIntegrationControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestOrderControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestOrderControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestProductControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestProductControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestWebhookControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestWebhookControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/AuthRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/AuthRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/AuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoBaseRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoBaseRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoBaseTranslation.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoBaseTranslation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoCategoryIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoCategoryIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoCategoryTranslationIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoCategoryTranslationIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoChangedCombineIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoChangedCombineIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoChangedPropertiesIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoChangedPropertiesIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoCombineIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoCombineIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoGtipIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoGtipIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoIntegrationIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoIntegrationIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoOrderAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoOrderAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoOrderBarcodeIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoOrderBarcodeIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoOrderFormIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoOrderFormIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoOrderFulfillmentIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoOrderFulfillmentIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoOrderIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoOrderIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoOrderProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoOrderProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoOrderStatusUpdateIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoOrderStatusUpdateIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoOrderUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoOrderUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoOrders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoSizeIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoSizeIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoTranslationIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoTranslationIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoVariantIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoVariantIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoVariantParameterIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoVariantParameterIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoVariantParameterTranslationIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoVariantParameterTranslationIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoVariantTranslationIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoVariantTranslationIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoWebhookIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoWebhookIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/DtoWebhookPayloadIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/DtoWebhookPayloadIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/RefreshTokenRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/RefreshTokenRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/product/rest/DtoRestProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/product/rest/DtoRestProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoImageIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoImageIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoRestPartiallyProductIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoRestPartiallyProductIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoRestProductIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoRestProductIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoRestStatusIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoRestStatusIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoRestStockAndPriceIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoRestStockAndPriceIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoRestStockIU.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/dto/product/restIU/DtoRestStockIU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/enums/CurrencyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/enums/CurrencyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/enums/LanguageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/enums/LanguageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/enums/StatusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/enums/StatusType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/enums/VatRateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/enums/VatRateType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/exception/BaseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/exception/BaseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/exception/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/exception/ErrorMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/exception/ErrorMessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/exception/ErrorMessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/handler/ApiError.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/handler/ApiError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/handler/Exception.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/handler/Exception.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/jwt/AuthEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/jwt/AuthEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/jwt/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/jwt/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/jwt/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/model/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/model/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/model/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/model/Integration.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/model/Integration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/model/RefreshToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/model/RefreshToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/repository/IIntegrationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/repository/IIntegrationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/repository/IOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/repository/IOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/repository/IRefreshTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/repository/IRefreshTokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/scheduled/AliexpressBulkRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/scheduled/AliexpressGetProductStatusCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/scheduled/FruugoBulkRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/service/IAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/service/IAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/service/IIntegrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/service/IIntegrationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/service/impl/IProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/service/impl/IProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/service/impl/IntegrationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/service/impl/IntegrationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mehmetsadullahguven/starter/IntegrationV2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/starter/IntegrationV2Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mehmetsadullahguven/starter/IntegrationV2ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/mehmetsadullahguven/starter/IntegrationV2ApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="32ZR3hQuE2ZzJkuy76i5Cizluq2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.IntegrationV2Application.executor": "Debug",
+    "Application.Unnamed.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/mehmet/IdeaProjects/Integration_project/backend",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.idea" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/backend" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mehmetsadullahguven.dto.product.restIU" />
+      <recent name="com.mehmetsadullahguven.model" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="IntegrationV2Application" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.mehmetsadullahguven.starter.IntegrationV2Application" />
+      <module name="integration-v2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08bf5452-0cf5-4f2c-a8d8-1de4c0b7f4c2" name="Changes" comment="" />
+      <created>1757625911229</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757625911229</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Product Updated.">
+      <option name="closed" value="true" />
+      <created>1757785037337</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1757785037337</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Product Updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Product Updated." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestProductControllerImpl.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestProductControllerImpl.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestProductControllerImpl.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/service/impl/IProductServiceImpl.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/service/impl/IProductServiceImpl.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/service/impl/IProductServiceImpl.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/controller/rest/impl/RestProductControllerImpl.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/jwt/AuthEntryPoint.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/jwt/JwtAuthenticationFilter.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/jwt/JwtAuthenticationFilter.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/mehmetsadullahguven/jwt/JwtService.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
