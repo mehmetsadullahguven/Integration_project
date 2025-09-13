@@ -1,16 +1,18 @@
 package com.mehmetsadullahguven.model;
 
-import com.mehmetsadullahguven.dto.product.restIU.DtoImageIU;
+
+import com.mehmetsadullahguven.enums.CurrencyType;
+import com.mehmetsadullahguven.enums.LanguageType;
 import com.mehmetsadullahguven.enums.StatusType;
+import com.mehmetsadullahguven.enums.VatRateType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -21,22 +23,16 @@ import java.util.List;
 @NoArgsConstructor
 public class Product extends BaseEntity{
 
-    @Column(name = "merchantProductId")
+    @Column(name = "merchant_product_id")
     private String merchantProductId;
 
-    @Column(name = "merchantParentProductId")
+    @Column(name = "merchant_parent_productId")
     private String merchantParentProductId;
 
-    @Column(name = "status")
-    private Integer status;
+    private StatusType status;
 
-    @Column(name = "serialized_data", columnDefinition = "TEXT")
-    private String serializedData;
-
-    @NotBlank(message = "name boş olamaz")
     private String name;
 
-    @NotBlank(message = "description boş olamaz")
     private String description;
 
     private String brand;
@@ -47,15 +43,20 @@ public class Product extends BaseEntity{
 
     private String ean;
 
+    private Integer stock;
 
     private Float price;
 
+    private CurrencyType currency;
+
+    private LanguageType language;
+
     private Integer purchasePrice;
 
-    private String vatRateType;
+    private VatRateType vatRateType;
 
-    @NotEmpty(message = "En az 1 resim olmak zorundadır")
-    private List<DtoImageIU> images;
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    private List<Image> images = new ArrayList<>();
 
     private Integer googleCategoryId;
 }

@@ -12,5 +12,7 @@ public class DtoRestProduct {
 
     private StatusType Status;
 
+    private Integer stock;
 
+    private Float price;
 }

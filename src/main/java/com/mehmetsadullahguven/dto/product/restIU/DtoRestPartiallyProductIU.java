@@ -15,18 +15,15 @@ import java.util.List;
 
 @Getter
 @Setter
-public class DtoRestProductIU extends DtoBase {
+public class DtoRestPartiallyProductIU extends DtoBase {
 
     @NotBlank(message = "merchantProductId boş olamaz")
     private String merchantProductId;
 
-    @NotBlank(message = "name boş olamaz")
     private String name;
 
-    @NotBlank(message = "description boş olamaz")
     private String description;
 
-    @NotNull(message = "status boş olamaz")
     private StatusType status;
 
     private String brand;
@@ -37,9 +34,6 @@ public class DtoRestProductIU extends DtoBase {
 
     private String ean;
 
-    private String merchantParentProductId;
-
-    @NotBlank(message = "Stok alanı boş olamaz")
     private Integer stock;
 
     private Float price;
@@ -52,7 +46,6 @@ public class DtoRestProductIU extends DtoBase {
 
     private LanguageType language;
 
-    @NotEmpty(message = "En az 1 resim olmak zorundadır")
     private List<DtoImageIU> images;
 
     private Integer googleCategoryId;
