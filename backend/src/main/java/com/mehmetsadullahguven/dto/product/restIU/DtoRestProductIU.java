@@ -39,7 +39,7 @@ public class DtoRestProductIU extends DtoBase {
 
     private String merchantParentProductId;
 
-    @NotBlank(message = "Stok alanı boş olamaz")
+    @NotNull(message = "Stok alanı boş olamaz")
     private Integer stock;
 
     private Float price;
