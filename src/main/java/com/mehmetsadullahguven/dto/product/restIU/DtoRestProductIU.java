@@ -20,20 +20,9 @@ public class DtoRestProductIU extends DtoBase {
     @NotBlank(message = "merchantProductId boş olamaz")
     private String merchantProductId;
 
-    @NotBlank(message = "name boş olamaz")
-    private String name;
-
-    @NotBlank(message = "description boş olamaz")
-    private String description;
-
-    @NotNull(message = "status boş olamaz")
     private StatusType status;
 
     private String brand;
-
-    private String size;
-
-    private String color;
 
     private String ean;
 
@@ -50,10 +39,12 @@ public class DtoRestProductIU extends DtoBase {
 
     private CurrencyType currency;
 
-    private LanguageType language;
+    private Integer googleCategoryId;
 
-    @NotEmpty(message = "En az 1 resim olmak zorundadır")
     private List<DtoImageIU> images;
 
-    private Integer googleCategoryId;
+    private List<DtoTranslationIU> translations;
+
+    private List<DtoOptionIU> options;
+
 }

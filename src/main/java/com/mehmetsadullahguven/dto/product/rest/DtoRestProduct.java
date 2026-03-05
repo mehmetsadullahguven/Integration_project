@@ -8,11 +8,19 @@ import lombok.Setter;
 @Setter
 public class DtoRestProduct {
 
+    private Long id;
+
     private String merchantProductId;
+
+    private String image;
 
     private StatusType Status;
 
     private Integer stock;
 
     private Float price;
+
+    private String action;
+
+    private String error;
 }

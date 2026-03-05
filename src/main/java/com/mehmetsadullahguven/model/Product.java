@@ -1,12 +1,12 @@
 package com.mehmetsadullahguven.model;
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.mehmetsadullahguven.enums.CurrencyType;
 import com.mehmetsadullahguven.enums.LanguageType;
 import com.mehmetsadullahguven.enums.StatusType;
 import com.mehmetsadullahguven.enums.VatRateType;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,15 +31,7 @@ public class Product extends BaseEntity{
 
     private StatusType status;
 
-    private String name;
-
-    private String description;
-
     private String brand;
-
-    private String size;
-
-    private String color;
 
     private String ean;
 
@@ -49,14 +41,22 @@ public class Product extends BaseEntity{
 
     private CurrencyType currency;
 
-    private LanguageType language;
-
     private Integer purchasePrice;
 
     private VatRateType vatRateType;
 
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    private Integer googleCategoryId;
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<Image> images = new ArrayList<>();
 
-    private Integer googleCategoryId;
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
+    private List<Translation> translations = new ArrayList<>();
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
+    private List<Option> options = new ArrayList<>();
+
 }

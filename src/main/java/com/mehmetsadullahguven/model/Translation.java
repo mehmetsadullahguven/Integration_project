@@ -1,6 +1,7 @@
 package com.mehmetsadullahguven.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.mehmetsadullahguven.enums.LanguageType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,20 +9,19 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "image")
+@Table(name = "translation")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Image extends BaseEntity{
+public class Translation extends BaseEntity{
 
-    private String path;
+    @Enumerated(EnumType.STRING)
+    private LanguageType language;
 
-    private String originalPath;
+    private String name;
 
-    private String alt;
-
-    private Boolean isMain;
+    private String description;
 
     @ManyToOne
     @JoinColumn(name = "product_id", referencedColumnName = "id")

@@ -1,27 +1,26 @@
 package com.mehmetsadullahguven.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "image")
+@Table(name = "option")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Image extends BaseEntity{
+public class Option extends BaseEntity{
 
-    private String path;
+    private String name;
 
-    private String originalPath;
-
-    private String alt;
-
-    private Boolean isMain;
+    private String value;
 
     @ManyToOne
     @JoinColumn(name = "product_id", referencedColumnName = "id")

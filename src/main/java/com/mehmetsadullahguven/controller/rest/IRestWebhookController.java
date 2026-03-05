@@ -1,6 +1,6 @@
 package com.mehmetsadullahguven.controller.rest;
 
-import com.mehmetsadullahguven.dto.DtoWebhookIU;
+import com.mehmetsadullahguven.dto.webhook.DtoWebhookIU;
 
 public interface IRestWebhookController {
 

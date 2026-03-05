@@ -16,4 +16,7 @@ public interface IProductRepository extends JpaRepository<Product, Long> {
 
     Optional<Product> findByMerchantProductId(String merchantProductID);
 
+    List<Product> findByMerchantParentProductIdIsNull();
+
+    List<Product> findByMerchantParentProductId(String merchantParentProductID);
 }
